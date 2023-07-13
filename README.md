@@ -1,7 +1,4 @@
-# WARP-
-WARP+使用方法，包含Mac，Windows，iOS，Android，OpenWRT
-
-WARP 简介
+#WARP 简介
 
 由 Cloudflare 公司出品的一款改善网络的软件，让你的网络使用更加安全
 
