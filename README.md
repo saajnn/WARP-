@@ -10,22 +10,22 @@ WARP 简介
 
 速度测试如下：
 
-  ·软件：WARP 官方客户端
-  ·网络：Wi-Fi
-  ·测试平台：MacOS Ventura 13.2.1，Edge浏览器
-  ·视频质量：4K 60FPS HDR https://youtu.be/mkggXE5e2yk
+软件：WARP 官方客户端
+网络：Wi-Fi
+测试平台：MacOS Ventura 13.2.1，Edge浏览器
+视频质量：4K 60FPS HDR https://youtu.be/mkggXE5e2yk
 ![WX20230714-145244@2x](https://github.com/SeverideLo/WARP-/assets/83275041/9fa70d1f-8f6f-4423-9bf7-ea0ecb830071)
 
-  ·软件：WARP 官方客户端
-  ·网络：Wi-Fi
-  ·测试平台：iPhone 6s Plus ，iOS 15.7，YouTube 客户端
-  ·视频质量：1080P 60FPS https://youtu.be/mkggXE5e2yk
+软件：WARP 官方客户端
+网络：Wi-Fi
+测试平台：iPhone 6s Plus ，iOS 15.7，YouTube 客户端
+视频质量：1080P 60FPS https://youtu.be/mkggXE5e2yk
 ![IMG_0006](https://github.com/SeverideLo/WARP-/assets/83275041/fe9c3e98-b961-4e32-80e9-c29f1f9333ee)
 
-  ·软件：WARP 官方 Android 客户端
-  ·网络：5G 中国联通
-  ·测试平台：vivo X80 Pro天玑9000版，Edge 浏览器
-  ·视频质量：1080P 60FPS https://youtu.be/mkggXE5e2yk
+软件：WARP 官方 Android 客户端
+网络：5G 中国联通
+测试平台：vivo X80 Pro天玑9000版，Edge 浏览器
+视频质量：1080P 60FPS https://youtu.be/mkggXE5e2yk
 ![WechatIMG1652](https://github.com/SeverideLo/WARP-/assets/83275041/9344afcd-8caa-404b-b454-8c6ab0a89d13)
 
 
