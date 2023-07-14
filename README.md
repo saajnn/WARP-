@@ -29,15 +29,17 @@ WARP 简介
 ![WechatIMG1652](https://github.com/SeverideLo/WARP-/assets/83275041/9344afcd-8caa-404b-b454-8c6ab0a89d13)
 
 
+WARP 小总结
+
+一款还不错的，可以看到外面世界的软件，只是默认是全局，导致部分国内的软件会有较高的延迟和检测使用代理的情况，同时流量较少，新用户免费流量仅有 1GB。
+同时，WARP 官方安卓客户端，默认是不支持 YouTube 和 Google Photo 客户端的，什么鬼！
 
 
-
-
-WARP 分析
+WARP 分析。
 
 WARP 其实是基于 WireGuard 协议的一款“VPN“。
 
-So，WARP 最重要的，其实是三要素。
+WireGuard 最重要的是这三要素：public-key（公钥），private-key（私钥），EndPoint（点对点）。
 
-public-key（公钥），private-key（私钥），EndPoint（点对点）
+同样，WARP 中也有这三个要素
 
