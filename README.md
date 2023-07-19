@@ -119,7 +119,7 @@ AllowedIPs = 0.0.0.0/0
 AllowedIPs = ::/0
 Endpoint = engage.cloudflareclient.com:2408
 ```
-**关键信息已打码，用X代替**
+**关键信息已用X代替**
 
 `Interface`
 >PrivateKey 刚才我们获取的 24PB 流量的密钥，就不多赘述了。
@@ -143,11 +143,85 @@ Endpoint = engage.cloudflareclient.com:2408
 
 这是关于 WireGuard 连接到哪个 Cloudflare 服务器的关键点，在 WARP 中，是由软件自动判断连接，如果要用第三方支持 WireGuard 的软件，则需要具体的`IP`和`端口`。
 
+但是 CloudFlare 的 IP 和端口这么多，怎么才能找到适合中国宝宝的呢？
+
+这就需要用到`WARP Endpoint IP`优选脚本。
+
+**注意⚠️**
+
+**所有脚本都必须在没有代理的环境下使用，切记**
+
+***
+
+`Windows`
+
+下载 [WARP Endpoint IP优选（Windows only）](https://gitlab.com/Misaka-blog/warp-script/-/blob/main/files/warp-yxip/warp-yxip-win.7z)，并且执行即可。
+
+***
+
+`MacOS`
+
+打开`终端`，输入下面脚本。
+
+```
+wget -N https://gitlab.com/Misaka-blog/warp-script/-/raw/main/files/warp-yxip/warp-yxip-mac.sh && bash warp-yxip-mac.sh
+```
+
+无需重新下载，再次运行输入。
+```
+bash warp-yxip-mac.sh
+```
+
+***
+
+`iOS与Android`
+
+iOS需要下载软件`iSH`，Android需要下载`Termux`
+
+复制下面脚本并运行。
+
+```
+wget -N https://gitlab.com/Misaka-blog/warp-script/-/raw/main/files/warp-yxip/warp-yxip.sh && bash warp-yxip.sh
+```
+
+无需重新下载，再次运行输入。
+
+```
+bash warp-yxip.sh
+```
+
+如果Android`Termux`提示无`Wget`，则先运行下面命令安装 Wget
+
+```
+pkg update && pkg install wget
+```
+iOS有同样问题，则运行下面命令
+```
+apk add -f openssh bash wget
+```
+
+iOS遇到更新包卡着不动输入以下命令
+```
+sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
+```
+
+**追加备用通用平台脚本**
+
+```
+curl -sSL https://gitlab.com/rwkgyg/CFwarp/raw/main/point/endip.sh -o endip.sh && chmod +x endip.sh && ./endip.sh
+```
+
+方法一样，windows使用`PowerShell`，MacOS使用`终端`，iOS使用`iSH`，安卓使用`Termux`
+
+脚本来自[Misaka](https://gitlab.com/Misaka-blog/warp-script)，备用脚本来自[rwkgyg](https://gitlab.com/rwkgyg/CFwarp)
 
 
 ## 实操
 
-目前支持`WireGuard协议`的软件有很多。
+通过上面的脚本，就能获取根据你网络筛选出来的最优 Endpoint，包含`IP`和`端口`，如图示，
+
+
+
 
 **iOS端**
 
