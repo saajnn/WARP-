@@ -38,13 +38,14 @@
 一款还不错的，可以看到外面世界的软件，只是默认是全局，导致部分国内的软件会有较高的延迟和检测使用代理的情况，同时流量较少，新用户免费流量仅有 1GB。
 同时，WARP 官方安卓客户端，默认是不支持 YouTube 和 Google Photo 客户端的，什么鬼！
 
-WARP+ 获取
+#  怎么获取更多流量
 
-WARP 分析。
+软件本身自带的  private-key 只有 1GB 流量，想要获得更多流量，只能通过更换 private-key。
 
-WARP 其实是基于 WireGuard 协议的一款“VPN“。
+##  方法一
 
-WireGuard 最重要的是这三要素：public-key（公钥），private-key（私钥），EndPoint（点对点）。
+找到 Telegram 机器人 `@generatewarpplusbot`，激活后它会让你关注两个频道
 
-同样，WARP 中也有这三个要素
+![WX20230719-154811@2x](https://github.com/SeverideLo/WARP-/assets/83275041/9bb5dd47-5c47-45ee-8b68-f74f502b1b94)
 
+都关注后，点击下方的 `I have subscribeed` 即可通过验证。
