@@ -99,7 +99,7 @@ https://youtu.be/mkggXE5e2yk
 
 因为 WARP 客户端走的是全局代理，开启时会导致绝大部分国内软件用不了或者响应慢，甚至检测出网络异常。
 
-通过上面获取的`private-key`获取附带的`wg-config.conf`文件可以才想到，WARP 其实用的`WireGurad`协议。
+通过上面获取的`private-key`获取附带的`wg-config.conf`文件可以猜想到，WARP 其实用的`WireGurad`协议。
 
 So，如果我们用其他支持`WireGuard协议`的代理软件，就能做到分流的效果。
 
@@ -205,6 +205,8 @@ iOS遇到更新包卡着不动输入以下命令
 sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
 ```
 
+***
+
 **追加备用通用平台脚本**
 
 ```
@@ -220,11 +222,42 @@ curl -sSL https://gitlab.com/rwkgyg/CFwarp/raw/main/point/endip.sh -o endip.sh &
 
 通过上面的脚本，就能获取根据你网络筛选出来的最优 Endpoint，包含`IP`和`端口`，如图示，
 
+![2](https://github.com/SeverideLo/WARP-/assets/83275041/b47b664b-7c66-4d7b-afcd-5f2eda308155)
 
-
+打开`wg-config.conf`文件，找到`Endpoint = engage.cloudflareclient.com:2408`这一段参数，把里面的`engage.cloudflareclient.com:2408`替换成截图上的其中一个IP即可。
 
 **iOS端**
 
-`Shadowrocket` `Loon` `Surge`和自家出的`WireGuard`
+`Shadowrocket` `Loon` `Surge` `WireGuard`  `等等`
 
-但支持分流的只有前三款，`Shadowrocket` `Loon` `Surge`
+个人测试过前两款。
+
+测试环境：
+```
+同一网络：Wi-Fi，无代理
+同一设备：iPhone 6s Plus
+软件版本：均为最新版
+测试平台：YouTube
+统一视频内容
+同一Endpoint和端口
+```
+结果如下。
+
+`Shadowrocket`
+![3](https://github.com/SeverideLo/WARP-/assets/83275041/3fa92343-eeb5-4420-8d1d-ddd27d23f6ca)
+
+`Loon`
+![4](https://github.com/SeverideLo/WARP-/assets/83275041/9252478b-12ff-43fc-8f6f-2e78f8ac7e01)
+
+ `WireGuard`的测试我就不放了，偷懒一下下，跟官方软件`WARP稍逊一点`。
+
+ ##  总结一下
+
+ 速度方面其实并不严谨，因为还是有很多客观因素影响，但是根据我长时间使用后，可以做一个主管的速度排序。
+
+`WARP` > `WireGuard` > `Loon` > `Shadowrocket`
+
+虽然 Shadowrocket 很多人使用，但是对于`WireGuard协议`的支持真就一坨💩。
+
+安卓的分流目前貌似并没有很好支持 WireGuard 协议的，Android 的 Clash 貌似需要 Meta 内核才能使用 WireGuard 协议，有空再研究。
+
