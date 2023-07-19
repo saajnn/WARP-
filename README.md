@@ -273,3 +273,14 @@ curl -sSL https://gitlab.com/rwkgyg/CFwarp/raw/main/point/endip.sh -o endip.sh &
 
 ![WX20230719-181457@2x](https://github.com/SeverideLo/WARP-/assets/83275041/0f236c8f-476e-41f7-b40f-f7a32790a043)
 
+在项目的[Releases](https://github.com/SeverideLo/WARP-/releases)中，下载`warp-clash.yaml`（配置文件来自[花墨世界](https://v.xss.sx/pass-wall/warp)）
+
+打开`warp-clash.yaml`，更改其中的提示项目：`修改为优选IP`，`端口`，`公钥`，`私钥`，保存。
+
+在`openclash`中上传修改后的`warp-clash.yaml`。
+
+![WX20230719-182409@2x](https://github.com/SeverideLo/WARP-/assets/83275041/31fb6f17-f7bd-4ac7-badb-46d7c3be49de)
+
+搞定收工！完结撒花！
+
+🌹🌷🌺🌼🌸💐🪷🍀🌹🌷🌺🌼🌸💐🪷🍀🌹🌷🌺🌼🌸💐🪷🍀🌹🌷🌺🌼🌸💐🪷🍀🌹🌷🌺🌼🌸💐🪷🍀🌹
