@@ -139,6 +139,12 @@ Endpoint = engage.cloudflareclient.com:2408
 >
 >Endpoint 这个学问就比较深，而且一定要管。
 
+###  Endpoint
+
+这是关于 WireGuard 连接到哪个 Cloudflare 服务器的关键点，在 WARP 中，是由软件自动判断连接，如果要用第三方支持 WireGuard 的软件，则需要具体的`IP`和`端口`。
+
+
+
 ## 实操
 
 目前支持`WireGuard协议`的软件有很多。
