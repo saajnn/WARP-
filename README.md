@@ -257,7 +257,7 @@ curl -sSL https://gitlab.com/rwkgyg/CFwarp/raw/main/point/endip.sh -o endip.sh &
 
 安卓这边，支持`WireGuard协议`的代理软件不多，但不推荐使用官方的`WARP`，毕竟看不了YouTube，推荐直接使用 PlayStore 的[Wireguard](https://play.google.com/store/search?q=wireguard&c=apps)
 
-如果有更好的代理软件，欢迎PR。
+如果有更好的代理软件，欢迎PR。（好像找到更好的了，等我测试一下先，晚点来完善安卓相关）
 
  ##  总结一下
 
