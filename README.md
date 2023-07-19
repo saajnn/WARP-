@@ -4,7 +4,9 @@
 
 官方网址 `https://1.1.1.1/`
 
-官方客户端包括：`Windows`，`MacOS`，`iOS`，`Android`和`Linux`
+官方客户端
+
+`Windows` `MacOS` `iOS` `Android` `Linux`
 
 ![WX20230714-142303@2x](https://github.com/SeverideLo/WARP-/assets/83275041/4b2a3f21-98a9-4e47-b88e-dc5c5e94816d)
 
