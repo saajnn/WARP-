@@ -238,7 +238,7 @@ curl -sSL https://gitlab.com/rwkgyg/CFwarp/raw/main/point/endip.sh -o endip.sh &
 
 `Shadowrocket` `Loon` `Surge` `WireGuard`等
 
-`Shadowrocket`使用方法。
+`Shadowrocket`使用方法
 
 支持文件配置导入，二维码导入和手动填写，按照提示操作即可。
 
@@ -250,7 +250,7 @@ curl -sSL https://gitlab.com/rwkgyg/CFwarp/raw/main/point/endip.sh -o endip.sh &
 
 ![6](https://github.com/SeverideLo/WARP-/assets/83275041/fa6846ee-51c2-492a-8a50-4aa43d6652d0)
 
-`WireGuard`使用方法。
+`WireGuard`使用方法
 
 支持文件配置导入，二维码导入和手动填写。
 
@@ -267,7 +267,7 @@ curl -sSL https://gitlab.com/rwkgyg/CFwarp/raw/main/point/endip.sh -o endip.sh &
  `WireGuard`
  ![8](https://github.com/SeverideLo/WARP-/assets/83275041/b9931c72-d243-4478-83cc-4c73a92c19fc)
 
-测试受到第三方客观因为，包括且不限于`运营商`，`网络高峰`，`Endpoint IP`等，请结合实际择优。
+测试受到第三方客观因素，包括且不限于`运营商`，`网络高峰`，`Endpoint IP`等，请结合实际择优。
 
 个人主观感受：Shadowrocket 对于 WireGuard 的支持很差，不推荐。另外两个表现尚可，不过支持分流的只有 Loon
 
@@ -320,6 +320,8 @@ NB4A分流有两种：`路由分流`和`软件分流`
 在 NB4A 中打开刚导入的配置信息，把本地地址这一栏中的 IPV6 全部删除，只留下`172.16.0.2/32`即可。
 
 ![251](https://github.com/SeverideLo/WARP-/assets/83275041/04639aac-a3fb-4716-b154-ec22555f8440)
+
+每次通过 NB4A 连接需要 3~8 秒握手，请耐心等待。
 
 更多关于`NB4A`的问题，请看官方[FAQ](https://matsuridayo.github.io/nb4a-faq/) 和 [分流解释](https://matsuridayo.github.io/nb4a-bhw-domestic/)
 
