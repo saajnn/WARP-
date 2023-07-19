@@ -49,3 +49,19 @@
 ![WX20230719-154811@2x](https://github.com/SeverideLo/WARP-/assets/83275041/9bb5dd47-5c47-45ee-8b68-f74f502b1b94)
 
 都关注后，点击下方的 `I have subscribeed` 即可通过验证。
+
+通过验证后，输入 `/generate` 获取密钥。
+
+这时候机器人会弹出一个人机验证的简单算术题目。
+
+![WX20230719-155154](https://github.com/SeverideLo/WARP-/assets/83275041/98046f9b-1ef3-457b-81dd-effc2d0ce2a9)
+
+这时候根据提示，计算，然后回复答案 `/generate XX`即刻获取 **24PB流量** 的 private-key。同时附带一份 `wg-config.conf` 的文件（后续再说）。
+
+**注意⚠️，每24小时只能获取一枚 private-key，想再要新的 key 只能等待 24小时后再次申请。**
+**再次申请 private-key 并不会导致以前申请的 key 失效**
+
+##  方法二
+
+
+
