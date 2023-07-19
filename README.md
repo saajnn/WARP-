@@ -307,7 +307,7 @@ NB4A分流有两种：`路由分流`和`软件分流`
 
 ![13](https://github.com/SeverideLo/WARP-/assets/83275041/e7af4c7d-cc0e-4dcc-99db-b19851807174)
 
-更多关于`NB4A`的问题，请看官方[FAQ](https://matsuridayo.github.io/nb4a-faq/) 和 [国内外分解释](https://matsuridayo.github.io/nb4a-bhw-domestic/)
+更多关于`NB4A`的问题，请看官方[FAQ](https://matsuridayo.github.io/nb4a-faq/) 和 [分流解释](https://matsuridayo.github.io/nb4a-bhw-domestic/)
 
 说个甜点，`NB4A`居然支持`Clash格式`和`Clash Meta格式`，同时内置`Clash Dashboard Web`，赞！！！
 
