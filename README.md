@@ -253,6 +253,12 @@ curl -sSL https://gitlab.com/rwkgyg/CFwarp/raw/main/point/endip.sh -o endip.sh &
 
  `WireGuard`的测试我就不放了，偷懒一下下，跟官方软件`WARP`稍逊一点。
 
+**Android**
+
+安卓这边，支持`WireGuard协议`的代理软件不多，但不推荐使用官方的`WARP`，毕竟看不了YouTube，推荐直接使用 PlayStore 的[Wireguard](https://play.google.com/store/search?q=wireguard&c=apps)
+
+如果有更好的代理软件，欢迎PR。
+
  ##  总结一下
 
  速度方面其实并不严谨，因为还是有很多客观因素影响，但是根据我长时间使用后，可以做一个主管的速度排序。
@@ -262,12 +268,6 @@ curl -sSL https://gitlab.com/rwkgyg/CFwarp/raw/main/point/endip.sh -o endip.sh &
 虽然 Shadowrocket 很多人使用，但是对于`WireGuard协议`的支持真就一坨💩。
 
 安卓的分流目前貌似并没有很好支持 WireGuard 协议的，Android 的 Clash 貌似需要 Meta 内核才能使用 WireGuard 协议，有空再研究。
-
-## Android
-
-安卓这边，支持`WireGuard协议`的代理软件不多，但不推荐使用官方的`WARP`，毕竟看不了YouTube，推荐直接使用 PlayStore 的[Wireguard](https://play.google.com/store/search?q=wireguard&c=apps)
-
-如果有更好的代理软件，欢迎PR。
 
 ## openWRT
 
