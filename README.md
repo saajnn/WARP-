@@ -101,7 +101,50 @@ https://youtu.be/mkggXE5e2yk
 
 通过上面获取的`private-key`获取附带的`wg-config.conf`文件可以才想到，WARP 其实用的`WireGurad`协议。
 
-So，如果我们用其他支持`WireGuard`协议的代理软件，就能做到分流的效果。
+So，如果我们用其他支持`WireGuard协议`的代理软件，就能做到分流的效果。
+
+##  WireGuard协议浅析
+
+WireGuard协议组成有两部分，分别是`Interface`和`Peer`。
+
+```
+[Interface]
+PrivateKey = 2IhVcDH9iXXXXXXXXXXXXXXXXXX
+Address = 172.16.0.2/32, 2606:4700:110:89a0:cc5d:7e86:faf0:8b9/128
+DNS = 1.1.1.1, 1.0.0.1
+MTU = 1280
+[Peer]
+PublicKey = bmXOC+XXXXXXXXXXXXXXXXXXXXXX
+AllowedIPs = 0.0.0.0/0
+AllowedIPs = ::/0
+Endpoint = engage.cloudflareclient.com:2408
+```
+**关键信息已打码，用X代替**
+
+`Interface`
+>PrivateKey 刚才我们获取的 24PB 流量的密钥，就不多赘述了。
+>
+>Address 这里指的是内部地址，包含 IPV4 和 IPV6。在172.16.0.2/32 中，2可以更改，范围是 255>X>=2，一般来说不需要更改
+>
+>DNS 那就是DNS，不明白可以百度，也不怎么需要更改。
+>
+>MTU 很深奥，不需要更改，保持默认
+
+`Peer`
+>PublicKey 有PrivateKey就肯定有PublicKey，你可以理解为公共钥匙。
+>
+>AllowedIPs 不会解释，保持默认就好
+>
+>AllowedIPs 一样，只不过上面的是 IPV4，这个是 IPV6，不用管
+>
+>Endpoint 这个学问就比较深，而且一定要管。
 
 ## 实操
 
+目前支持`WireGuard协议`的软件有很多。
+
+**iOS端**
+
+`Shadowrocket` `Loon` `Surge`和自家出的`WireGuard`
+
+但支持分流的只有前三款，`Shadowrocket` `Loon` `Surge`
