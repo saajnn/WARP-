@@ -93,7 +93,7 @@ https://youtu.be/mkggXE5e2yk
 
 ![WX20230719-160755@2x](https://github.com/SeverideLo/WARP-/assets/83275041/20f582be-167c-4605-a8ec-518541135152)
 
-拿到 24PB 的 private-key 后，再软件里面更换即可。
+拿到 24PB 的 private-key 后，在软件里面更换即可。
 
 ![WX20230719-161553](https://github.com/SeverideLo/WARP-/assets/83275041/d30edf85-a59b-4625-9550-702c371515f6)
 
