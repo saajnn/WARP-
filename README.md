@@ -9,12 +9,12 @@
 ![WX20230714-142303@2x](https://github.com/SeverideLo/WARP-/assets/83275041/4b2a3f21-98a9-4e47-b88e-dc5c5e94816d)
 
 速度测试如下：
-```
-软件：WARP 官方客户端
-网络：Wi-Fi
-测试平台：MacOS Ventura 13.2.1，Edge浏览器
-视频质量：4K 60FPS HDR https://youtu.be/mkggXE5e2yk
-```
+
+>软件：WARP 官方客户端
+>网络：Wi-Fi
+>测试平台：MacOS Ventura 13.2.1，Edge浏览器
+>视频质量：4K 60FPS HDR https://youtu.be/mkggXE5e2yk
+
 ![WX20230714-145244@2x](https://github.com/SeverideLo/WARP-/assets/83275041/9fa70d1f-8f6f-4423-9bf7-ea0ecb830071)
 
 软件：WARP 官方客户端
