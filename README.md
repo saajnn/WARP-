@@ -109,6 +109,8 @@ So，如果我们用其他支持`WireGuard协议`的代理软件，就能做到�
 
 WireGuard协议组成有两部分，分别是`Interface`和`Peer`。
 
+打开刚才获取 24PB 流量时，附带的那份 `wg-config.conf` 文件。
+
 ```
 [Interface]
 PrivateKey = 2IhVcDH9iXXXXXXXXXXXXXXXXXX
@@ -228,7 +230,7 @@ curl -sSL https://gitlab.com/rwkgyg/CFwarp/raw/main/point/endip.sh -o endip.sh &
 
 打开`wg-config.conf`文件，找到`Endpoint = engage.cloudflareclient.com:2408`这一段参数，把里面的`engage.cloudflareclient.com:2408`替换成截图上的其中一个IP即可。
 
-然后就可以用`wg-config.conf`这份文件，导入到你的代理软件中。当然，你也可以根据配置文件逐个填入。
+**然后就可以用`wg-config.conf`这份文件，导入到你的代理软件中。当然，你也可以根据配置文件逐个填入。**
 
 **iOS端**
 
@@ -263,7 +265,7 @@ curl -sSL https://gitlab.com/rwkgyg/CFwarp/raw/main/point/endip.sh -o endip.sh &
  `WireGuard`
  ![8](https://github.com/SeverideLo/WARP-/assets/83275041/b9931c72-d243-4478-83cc-4c73a92c19fc)
 
-测试受到第三方客观因为，包括且不限于`运营商`，`网络高峰`，`Endpoint IP`等，请结合实际择友。
+测试受到第三方客观因为，包括且不限于`运营商`，`网络高峰`，`Endpoint IP`等，请结合实际择优。
 
 个人主观感受：Shadowrocket 对于 WireGuard 的支持很差，不推荐。另外两个表现尚可，不过支持分流的只有 Loon
 
@@ -299,13 +301,23 @@ NB4A分流有两种：`路由分流`和`软件分流`
 
 ![nb4a-bhw-domestic-1](https://github.com/SeverideLo/WARP-/assets/83275041/c68eae63-e070-4605-b3a8-9ef66045adc8)
 
-从`ip.skk.moe`看出，分流的确没问题。
+从[IP查询](https://ip.skk.moe/)看出，分流没问题。
 
 ![12](https://github.com/SeverideLo/WARP-/assets/83275041/deb26fe8-b827-41ca-b7bd-31f85f76ca3e)
 
 `速度测试`
 
 ![13](https://github.com/SeverideLo/WARP-/assets/83275041/e7af4c7d-cc0e-4dcc-99db-b19851807174)
+
+如果遇到`失败::decode config:outbound opitions:jason:cannot unmarshal arry into Go Struct field WireGuardoutboundOptions.local_address of type string`报错，不要惊慌。
+
+![微信图片_20230719230239](https://github.com/SeverideLo/WARP-/assets/83275041/41a15c6b-ed60-44e9-a174-c8a8f5382613)
+
+因为 NB4A 导入 wg-config.conf 时，本地地址出现一点问题。
+
+在 NB4A 中打开刚导入的配置信息，把本地地址这一栏中的 IPV6 全部删除，只留下`172.16.0.2/32`即可。
+
+![251](https://github.com/SeverideLo/WARP-/assets/83275041/04639aac-a3fb-4716-b154-ec22555f8440)
 
 更多关于`NB4A`的问题，请看官方[FAQ](https://matsuridayo.github.io/nb4a-faq/) 和 [分流解释](https://matsuridayo.github.io/nb4a-bhw-domestic/)
 
