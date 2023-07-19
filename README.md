@@ -63,16 +63,45 @@ https://youtu.be/mkggXE5e2yk
 
 这时候根据提示，计算，然后回复答案 `/generate XX`即刻获取 **24PB流量** 的 private-key。同时附带一份 `wg-config.conf` 的文件（后续再说）。
 
-**注意⚠️，每24小时只能获取一枚 private-key，想再要新的 key 只能等待 24小时后再次申请。**
+***
 
-**再次申请 private-key 并不会导致以前申请的 key 失效。**
+##  **注意⚠️**
 
+>每24小时只能获取一枚 private-key，想再要新的 key 只能等待 24小时后再次申请。
 
-##  方法二
+>再次申请 private-key 并不会导致以前申请的 key 失效。
+
+>每个 private-key 只能搭载 5 台设备。
+
+***
+
+###  方法二
 
 通过Replit平台生成。
 
-[一键生成24PB流量key]([url](https://replit.com/@ygkkkk/WarpKey-Register-PRO)https://replit.com/@ygkkkk/WarpKey-Register-PRO) via`yonggekkk`
+[一键生成24PB流量key](https://replit.com/@ygkkkk/WarpKey-Register-PRO) via`yonggekkk`
 
+打开点击右上角的`Run`即可。
 
+![WX20230719-160810@2x](https://github.com/SeverideLo/WARP-/assets/83275041/ff29e151-7e43-4fe2-90aa-b812d028f10b)
+
+运行一段时间，就能得到内含 24PB 的 private-key。
+
+![WX20230719-160755@2x](https://github.com/SeverideLo/WARP-/assets/83275041/20f582be-167c-4605-a8ec-518541135152)
+
+拿到 24PB 的 private-key 后，再软件里面更换即可。
+
+![WX20230719-161553](https://github.com/SeverideLo/WARP-/assets/83275041/d30edf85-a59b-4625-9550-702c371515f6)
+
+其他系统不演示了，自行学习。
+
+#  进阶使用
+
+因为 WARP 客户端走的是全局代理，开启时会导致绝大部分国内软件用不了或者响应慢，甚至检测出网络异常。
+
+通过上面获取的`private-key`获取附带的`wg-config.conf`文件可以才想到，WARP 其实用的`WireGurad`协议。
+
+So，如果我们用其他支持`WireGuard`协议的代理软件，就能做到分流的效果。
+
+## 实操
 
