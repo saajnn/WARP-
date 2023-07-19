@@ -43,6 +43,8 @@ https://youtu.be/mkggXE5e2yk
 一款还不错的，可以看到外面世界的软件，只是默认是全局，导致部分国内的软件会有较高的延迟和检测使用代理的情况，同时流量较少，新用户免费流量仅有 1GB。
 同时，WARP 官方安卓客户端，默认是不支持 YouTube 和 Google Photo 客户端的，什么鬼！
 
+如果遇到一直处于`连接中`或`无法连接`，请耐心看完后续教程，更换`private-key`即可解决。
+
 #  怎么获取更多流量
 
 软件本身自带的  private-key 只有 1GB 流量，想要获得更多流量，只能通过更换 private-key。
@@ -260,4 +262,14 @@ curl -sSL https://gitlab.com/rwkgyg/CFwarp/raw/main/point/endip.sh -o endip.sh &
 虽然 Shadowrocket 很多人使用，但是对于`WireGuard协议`的支持真就一坨💩。
 
 安卓的分流目前貌似并没有很好支持 WireGuard 协议的，Android 的 Clash 貌似需要 Meta 内核才能使用 WireGuard 协议，有空再研究。
+
+## openWRT
+
+首先保证你的openwrt中的`openclash`处于最新版本。
+
+且保证能成功更新，并使用`Meta内核`。
+
+![WX20230719-181515@2x](https://github.com/SeverideLo/WARP-/assets/83275041/bf263757-b633-463b-bf48-c3c4a33d28e7)
+
+![WX20230719-181457@2x](https://github.com/SeverideLo/WARP-/assets/83275041/0f236c8f-476e-41f7-b40f-f7a32790a043)
 
