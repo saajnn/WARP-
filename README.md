@@ -58,8 +58,10 @@
 
 这时候根据提示，计算，然后回复答案 `/generate XX`即刻获取 **24PB流量** 的 private-key。同时附带一份 `wg-config.conf` 的文件（后续再说）。
 
+<font color=red>
 **注意⚠️，每24小时只能获取一枚 private-key，想再要新的 key 只能等待 24小时后再次申请。**
 **再次申请 private-key 并不会导致以前申请的 key 失效**
+</font>
 
 ##  方法二
 
